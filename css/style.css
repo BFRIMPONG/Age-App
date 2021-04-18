@@ -93,9 +93,11 @@ p{
 
 .btn:hover {
   cursor: pointer;
-  box-shadow: 0 0.4rem 1.4rem 0 rgb(27, 21, 82);
+  color: white;
+  background-color: tomato;
+  /* box-shadow: 0 0.4rem 1.4rem 0 rgb(27, 21, 82); */
   transform: translateY(-0.1rem);
-  transition: transform 150ms;
+  transition: transform 60ms;
 }
 
 .btn[disabled]:hover {
@@ -118,7 +120,7 @@ input {
   padding: 1.5rem;
   font-size: 1.8rem;
   border: none;
-  box-shadow: 0 0.1rem 1.4rem 0 rgb(27, 21, 82);
+  box-shadow: 0 0.1rem 0.4rem 0 rgb(199, 70, 70);
 }
 
 input::placeholder {
@@ -139,6 +141,3 @@ input::placeholder {
   font-weight: bolder;
 }
 
-/* #home{
-  border: 1px solid rgb(27, 21, 82);
-} */
