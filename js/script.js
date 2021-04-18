@@ -25,19 +25,19 @@ function displayYearsBetweenDates(){
     console.log(dateValue_2); 
 
     //first date
-    const date1year = dateValue_1;
+    const date1year = dateValue_1.slice(0,4);
     console.log(date1year);
-    const date1month = dateValue_1;
+    const date1month = dateValue_1.slice(5,7);
     console.log(date1month);
-    const date1day = dateValue_1;
+    const date1day = dateValue_1.slice(8,11);
     console.log(date1day);
 
     //second date
-    const date2year = dateValue_2;
+    const date2year = dateValue_2.slice(0,4);
     console.log(date2year);
-    const date2month = dateValue_2;
+    const date2month = dateValue_2.slice(5,7);
     console.log(date2month);
-    const date2day = dateValue_2;
+    const date2day = dateValue_2.slice(8,11);
     console.log(date2day);
     const paraText_1 = document.getElementById('displayAge');
 
@@ -62,8 +62,7 @@ function displayYearsBetweenDates(){
     // const date = new Date().getFullYear();
     // const userAge = date - ageValue;
 
-    paraText_1.innerHTML = `Number years between the two dates is<br>   
-    ${Math.round(days_difference/365)} years`;
+    paraText_1.innerHTML = `You are ${Math.round(days_difference/365)} years old as at today`;
 }
 
 yearSubmitButton.addEventListener('click', displayYearsBetweenDates);
