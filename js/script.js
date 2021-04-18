@@ -1,9 +1,9 @@
-const ageSubmitButton = document.getElementById('submit_1_1');
+const ageSubmitButton = document.getElementById('submitAge');
 console.log(ageSubmitButton);
 
 function displayYear(){
     const ageValue = document.getElementById('input_1_1').value;
-    const paraText = document.getElementById('paragraph_1');
+    const paraText = document.getElementById('displayYear');
 
     const date = new Date().getFullYear();
     const userAge = date - ageValue;
@@ -19,27 +19,27 @@ const yearSubmitButton = document.getElementById('submit_1_2');
 console.log(yearSubmitButton);
 
 function displayYearsBetweenDates(){
-    const dateValue_1 = document.getElementById('input_1_2').value + "";
-    const dateValue_2 = document.getElementById('input_1_3').value + "";
-    console.log(dateValue_1); 
-    console.log(dateValue_2); 
+    const dateOfBirth = document.getElementById('input_1_2').value + "";
+    const ageAtDate = document.getElementById('input_1_3').value + "";
+    console.log(dateOfBirth); 
+    console.log(ageAtDate); 
 
     //first date
-    const date1year = dateValue_1.slice(0,4);
+    const date1year = dateValue_1;
     console.log(date1year);
-    const date1month = dateValue_1.slice(5,7);
+    const date1month = dateValue_1;
     console.log(date1month);
-    const date1day = dateValue_1.slice(8,11);
+    const date1day = dateValue_1;
     console.log(date1day);
 
     //second date
-    const date2year = dateValue_2.slice(0,4);
+    const date2year = dateValue_2;
     console.log(date2year);
-    const date2month = dateValue_2.slice(5,7);
+    const date2month = dateValue_2;
     console.log(date2month);
-    const date2day = dateValue_2.slice(8,11);
+    const date2day = dateValue_2;
     console.log(date2day);
-    const paraText_1 = document.getElementById('paragraph_2');
+    const paraText_1 = document.getElementById('displayAge');
 
 
     var date1, date2;  
