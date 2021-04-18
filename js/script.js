@@ -19,10 +19,10 @@ const yearSubmitButton = document.getElementById('submit_1_2');
 console.log(yearSubmitButton);
 
 function displayYearsBetweenDates(){
-    const dateOfBirth = document.getElementById('input_1_2').value + "";
-    const ageAtDate = document.getElementById('input_1_3').value + "";
-    console.log(dateOfBirth); 
-    console.log(ageAtDate); 
+    const dateValue_1 = document.getElementById('input_1_2').value + "";
+    const dateValue_2 = document.getElementById('input_1_3').value + "";
+    console.log(dateValue_1); 
+    console.log(dateValue_2); 
 
     //first date
     const date1year = dateValue_1;
