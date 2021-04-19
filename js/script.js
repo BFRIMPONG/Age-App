@@ -1,8 +1,8 @@
-const ageSubmitButton = document.getElementById('submitAge');
+const ageSubmitButton = document.getElementById('submitYear');
 console.log(ageSubmitButton);
 
 function displayYear(){
-    const ageValue = document.getElementById('input_1_1').value;
+    const ageValue = document.getElementById('ageInput').value;
     const paraText = document.getElementById('displayYear');
 
     const date = new Date().getFullYear();
@@ -15,12 +15,12 @@ ageSubmitButton.addEventListener('click', displayYear);
 
 
 // year calculation
-const yearSubmitButton = document.getElementById('submit_1_2');
+const yearSubmitButton = document.getElementById('submitAge');
 console.log(yearSubmitButton);
 
 function displayYearsBetweenDates(){
-    const dateValue_1 = document.getElementById('input_1_2').value + "";
-    const dateValue_2 = document.getElementById('input_1_3').value + "";
+    const dateValue_1 = document.getElementById('dob').value + "";
+    const dateValue_2 = document.getElementById('date').value + "";
     console.log(dateValue_1); 
     console.log(dateValue_2); 
 
@@ -54,14 +54,7 @@ function displayYearsBetweenDates(){
 
     //calculate days difference by dividing total milliseconds in a day  
     var days_difference = time_difference / (1000 * 60 * 60 * 24);  
-      
-    // document.write("Number of days between dates <br>" +   
-    //                 date1 + " and <br>" + date2 + " are: <br>"   
-    //                 + days_difference + " days");  
-
-    // const date = new Date().getFullYear();
-    // const userAge = date - ageValue;
-
+   
     paraText_1.innerHTML = `You are ${Math.round(days_difference/365)} years old as at today`;
 }
 
